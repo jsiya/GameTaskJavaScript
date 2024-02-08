@@ -8,17 +8,31 @@
 </head>
 <body class="character-choice-body">
     <div class="return-back-div">
-        <button><a href="../pages/index.html">Back</a></button>
+        <button>
+            <a href="../pages/index.html">
+                <img style="width: 40px; height: 40px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAABeklEQVR4nO3csUocYRQF4LOFzT6C2IptUlumMu5zqa8RyyCpYqfPEl9AMIFtHREmQcIGLOJ/77rfBxeW3WbmnGFm2Z35EwAAAAAAAABgpyySrJJczLOa32OAZZLrJNNfcz1/xhuHf7sh/N9zKf268Kckj0n2lVAT/jTPiQL+f/g3rwz/eT4ooObIn5L8SLKngJrw10mOhV9z2lkn+SR84W89R34h4RcSfiHhFxJ+IeEXEn4h4RcSfiHhFxJ+IeEXEv4W/Z7/XudXkm9JjkaGv/jHrSO7PPdJDkYVcNpgh6eG83VUAecNdnZqOD9HFXDWYGenhvMwqgCnoGws4GpUAS7C2XgRPsxAvobmz3n/anT4L0twe0kxJTSghAaU0IASGlBCA0poQAkNKKEBJTSghAaU0IASGlBCA0poYOkx1e0r4c6D2vV/6nx8g23YeUuLddRbWq6mfwlfqjdwl5cs+27JsnEWST7Pt0Cez68t2gcAAAAAAAAA5NWeAAufE+0pN9nnAAAAAElFTkSuQmCC">
+            </a>
+        </button>
     </div>
     <div class="characters-div">
         <p>Choose character:</p>
-        <ul type="none">
-            <li><img src="../Asserts/images/swordsman.png"></li>
-            <li><img src="../Asserts/images/magician.png"></li>
-            <li><img src="../Asserts/images/bow.png"></li>
-        </ul>
+        <div class="characters-imgs">
+            <label>
+                <input type="radio" name="test" value="small" checked>
+                <img src="../Asserts/images/swordsman.png" alt="Option 1">
+            </label>
+            <label>
+                <input type="radio" name="test" value="big">
+                <img src="../Asserts/images/magician.png" alt="Option 2">
+            </label>
+            <label>
+                <input type="radio" name="test" value="big">
+                <img img src="../Asserts/images/bow.png" alt="Option 2">
+            </label>
+        </div>
         <button class="continue-btn"><a href="../pages/gameZone.html">Continue</a></button>
     </div>
     <script src="../scripts/index.js"></script>
 </body>
+
 </html>

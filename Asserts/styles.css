@@ -23,11 +23,16 @@
 
 
 
-
+.return-back-div button{
+    border: 0px;
+    background-color: transparent;
+}
+.return-back-div a{
+    text-decoration: none;
+}
 .character-choice-body{
     display: flex;
     flex-direction: column;
-    gap: 60px;
     background-color: rgba(250, 235, 215, 0.627);
 }
 .characters-div{
@@ -40,16 +45,30 @@
     font-size: 50px;
     color: rgb(44, 11, 106);
 }
-.characters-div ul{
-    display: flex;
-    gap: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
 
-.characters-div ul li{
-    border: 5px;
-    border-color: red;
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + img {
+    outline: 2px solid rgb(217, 104, 104);
+    border-radius: 10px;
+  }
+
+.characters-imgs{
+    display: flex;
+    margin-right: 80px;
+    margin-left: 80px;
+    gap: 30px;
 }
 
 .characters-div img{
@@ -59,9 +78,13 @@
     margin-top: 50px;
     width: 30%;
     height: 70px;
+    border-radius: 20px;
+    background-color: rgba(245, 162, 141, 0.65);
+    border-color: rgb(162, 81, 81);
 }
 .continue-btn a{
     text-decoration: none;
     font-size: 30px;
-
+    font-weight: 500;
+    color: rgb(162, 81, 81);
 }

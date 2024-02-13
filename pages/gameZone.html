@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game Zone</title>
+    <link rel="stylesheet" href="../Asserts/styles.css">
+    <link rel="stylesheet" href="../Asserts/gameZone.css">
 </head>
-<body>
-    
+<body id="gamezone-body">
+    <div class="return-back-div">
+        <button>
+            <a href="../pages/index.html">
+                <img style="width: 40px; height: 40px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAABeklEQVR4nO3csUocYRQF4LOFzT6C2IptUlumMu5zqa8RyyCpYqfPEl9AMIFtHREmQcIGLOJ/77rfBxeW3WbmnGFm2Z35EwAAAAAAAABgpyySrJJczLOa32OAZZLrJNNfcz1/xhuHf7sh/N9zKf268Kckj0n2lVAT/jTPiQL+f/g3rwz/eT4ooObIn5L8SLKngJrw10mOhV9z2lkn+SR84W89R34h4RcSfiHhFxJ+IeEXEn4h4RcSfiHhFxJ+IeEXEv4W/Z7/XudXkm9JjkaGv/jHrSO7PPdJDkYVcNpgh6eG83VUAecNdnZqOD9HFXDWYGenhvMwqgCnoGws4GpUAS7C2XgRPsxAvobmz3n/anT4L0twe0kxJTSghAaU0IASGlBCA0poQAkNKKEBJTSghAaU0IASGlBCA0poYOkx1e0r4c6D2vV/6nx8g23YeUuLddRbWq6mfwlfqjdwl5cs+27JsnEWST7Pt0Cez68t2gcAAAAAAAAA5NWeAAufE+0pN9nnAAAAAElFTkSuQmCC">
+            </a>
+        </button>
+    </div>
+    <div class="gamezone-body">
+        <div class="game-zone-main">
+            <div class="player-zone-sec">
+                <img id="hero" style="width: 80%;">
+                <progress id="file" value="100" max="100"></progress>
+            </div>
+            <div class="enemy-zone-sec">
+                <img style="transform: scaleX(-1); width: 80%;" src="../Asserts/images/barbarian.png">
+                <progress id="file" value="100" max="100"></progress>
+            </div>
+        </div>
+        <button class="attack-Btn">ATTACK</button>
+    </div>
+    <script src="../scripts/gameZone.js"></script>
 </body>
 </html>

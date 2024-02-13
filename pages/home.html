@@ -18,19 +18,21 @@
         <p>Choose character:</p>
         <div class="characters-imgs">
             <label>
-                <input type="radio" name="test" value="small" checked>
-                <img src="../Asserts/images/swordsman.png" alt="Option 1">
+                <input type="radio" name="character" value="swordsman" checked>
+                <img src="../Asserts/images/swordsman.png">
             </label>
             <label>
-                <input type="radio" name="test" value="big">
-                <img src="../Asserts/images/magician.png" alt="Option 2">
+                <input type="radio" name="character" value="magician">
+                <img src="../Asserts/images/magician.png">
             </label>
             <label>
-                <input type="radio" name="test" value="big">
-                <img img src="../Asserts/images/bow.png" alt="Option 2">
+                <input type="radio" name="character" value="bow">
+                <img img src="../Asserts/images/bow.png">
             </label>
         </div>
-        <button class="continue-btn"><a href="../pages/gameZone.html">Continue</a></button>
+        <button id="continue-btn" class="continue-btn">
+            <a href="../pages/gameZone.html" onclick="chooseCharacter()">Continue</a>
+        </button>
     </div>
     <script src="../scripts/index.js"></script>
 </body>

@@ -1,0 +1,36 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(250, 235, 215, 0.627);
+}
+.gamezone-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.game-zone-main{
+    display: flex;
+    justify-content: space-around;
+}
+.player-zone-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.enemy-zone-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.attack-Btn{
+    width: 30%;
+    height: 60px;
+    border: 0px;
+    border-radius: 15px;
+    background-color: rgba(193, 1, 1, 0.687);
+
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(152, 4, 4);
+}

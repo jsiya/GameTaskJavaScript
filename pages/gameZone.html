@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../Asserts/styles.css">
     <link rel="stylesheet" href="../Asserts/gameZone.css">
 </head>
-<body id="gamezone-body">
+<body id="bodyId">
     <div class="return-back-div">
         <button>
             <a href="../pages/index.html">
@@ -15,18 +15,19 @@
             </a>
         </button>
     </div>
-    <div class="gamezone-body">
+    <div class="gamezone-body" id="gamezone-body">
         <div class="game-zone-main">
             <div class="player-zone-sec">
                 <img id="hero" style="width: 80%;">
-                <progress id="file" value="100" max="100"></progress>
+                <progress id="playerHealth" value="100" max="100"></progress>
             </div>
             <div class="enemy-zone-sec">
                 <img style="transform: scaleX(-1); width: 80%;" src="../Asserts/images/barbarian.png">
-                <progress id="file" value="100" max="100"></progress>
+                <progress id="enemyHealth" value="100" max="100"></progress>
             </div>
         </div>
-        <button class="attack-Btn">ATTACK</button>
+        <button class="attack-Btn" id="attackBtn">ATTACK</button>
+        <label style="color: red;">Note: Enemy's attackes are random!</label>
     </div>
     <script src="../scripts/gameZone.js"></script>
 </body>
